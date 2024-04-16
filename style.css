@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Plain, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+html, body{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    /* height: 100%; */
+    width: 100%;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em 2em;
+}
+#nav h3{
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 1em 1.5em;
+    margin-left: 1vw;
+}
+
+#intro{
+    height: 50%;
+    width: 100%;
+    padding: 2.5em 2.5em;
+}
+#intro h1{
+    font-size: 6.5em;
+    letter-spacing: -0.05em;
+    line-height: 0.9em;
+    font-weight: 700;
+}
+#place{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 3vh;
+}
+#place h3, #place h2{
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+}
+#character{
+    height: 30%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+#character>img{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(https://wallpapercave.com/wp/wp10286760.jpg); */
+    /* background-size: cover; */
+    object-fit: cover;
+    object-position: top;
+    scale: 1.3;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+}
+#about{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 5vw;
+}
+#about h2{
+    width: 60%;
+    height: 30vh;
+    font-size: 3.5rem;
+    height: fit-content;
+    font-weight: 600;
+    letter-spacing: -0.2vh;
+    line-height: 9vh;
+}
+#handles{
+    width: 33%;
+    height: 25vh;
+    border-left: 2px solid black;
+    padding: 0 5em;
+    padding-bottom: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#handles h3{
+    font-size: 2em;
+    font-weight: 500;
+}
+#icons i{
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+#works{
+    border-top: 2px solid black;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    padding: 3vw 3vw;
+}
+#left-content{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid black;
+    padding-right: 50px;
+    padding-right: 4vw;
+}
+#left-content h3{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+#left-content i{
+    font-size: 2.2vw;
+}
+#right-content{
+    width: 67%;
+    height: 100%;
+    padding: 0 4vw;
+}
+.content{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 1.8vw 0;
+}
+.content:nth-child(1){
+    padding-top: 0;
+    border-bottom: 2px solid black;
+}
+.content .elements{
+    width: 50%;
+    /* height: 100%; */
+}
+.content .elements:nth-child(1){
+    border-right: 2px solid black;
+    padding-right: 5vw;
+}
+.content .elements:nth-child(2){
+    padding-left: 5vw;
+}
+.content .elements h4{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.content .elements p{
+    font-size: 1.03rem;
+    color: rgb(66, 61, 61);
+    font-weight: 500;
+}
+
+@media only screen and (width <= 500px) {
+    #intro {
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav h3:nth-child(1){
+        display: none;
+    }
+    #nav h3{
+        font-size: 0.8em;
+    }
+
+    #intro h1 {
+        font-size: 2em;
+        line-height: 4vh;
+    }
+
+    #place{
+        position: relative;
+        top: -0.2vh;
+    }
+
+    #place h2{
+        display: none;
+    }
+    #place h3{
+        font-size: 1em;
+    }
+
+    #character{
+        height: 100%;
+        width: 100%;
+    }
+    #character img{
+        height: 20vh;
+        width: 90vw;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    #about {
+        padding: 40px 20px;
+    }
+
+    #about h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #handles {
+        padding: 7px 40px;
+    }
+
+    #handles h3 {
+        font-size: 20px;
+    }
+
+    #icons i {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    #works {
+        padding: 30px 20px;
+    }
+
+    #left-content {
+        padding-right: 20px;
+    }
+
+    #left-content h3 {
+        font-size: 20px;
+    }
+
+    #left-content i {
+        font-size: 25px;
+    }
+
+    #right-content {
+        padding: 0 20px;
+    }
+
+    .content .elements h4 {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    .content .elements p {
+        font-size: 14px;
+    }
+}
