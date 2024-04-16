@@ -189,6 +189,9 @@ html, body{
         flex-direction: column;
     }
 
+    #nav{
+        margin-top: 3vw;
+    }
     #nav h3:nth-child(1){
         display: none;
     }
@@ -225,37 +228,41 @@ html, body{
     }
 
     #about {
-        padding: 40px 20px;
+        padding: 3vw;
     }
 
     #about h2 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 1.7em;
+        line-height: 3.2vh;
     }
 
     #handles {
-        padding: 7px 40px;
+        height: 18vh;
+        padding: 3vw 5vw;
     }
 
     #handles h3 {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     #icons i {
-        font-size: 20px;
-        padding: 8px;
+        margin-right: 0.5vw;
+        font-size: 0.8em;
+        padding: 1.2vw;
     }
 
     #works {
-        padding: 30px 20px;
+        padding: 3vw;
     }
 
     #left-content {
-        padding-right: 20px;
+        /* padding-right: 20px; */
+        display: none;
     }
 
     #left-content h3 {
-        font-size: 20px;
+        /* font-size: 20px;
+        font-size: 0.8rem; */
     }
 
     #left-content i {
@@ -263,15 +270,29 @@ html, body{
     }
 
     #right-content {
-        padding: 0 20px;
+        width: 100%;
+        height: 37vh;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    .elements{
+        padding: 4vw 1vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .content .elements h4 {
-        font-size: 25px;
-        margin-bottom: 8px;
+        font-size: 1.5em;
+        margin-bottom: 1.2vh;
     }
 
     .content .elements p {
-        font-size: 14px;
+        font-size: 0.8em;
+    }
+
+    .elements:nth-child(2n-1){
+        height: 16vh;
     }
 }
